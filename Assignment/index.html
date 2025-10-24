@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Portfolio - Assignment</title>
+		<!-- Local Bootstrap CSS -->
+		<link rel="stylesheet" href="CSS/bootstrap.css">
+		<!-- Custom styles -->
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+
+		<!-- Navbar -->
+		<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+			<div class="container">
+				<a class="navbar-brand d-flex align-items-center" href="#">
+					<img src="Images/Logo.png" alt="logo" width="36" height="36" class="me-2">
+					<span class="fw-bold">Emmanuel Wallace Landford</span>
+				</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="nav">
+					<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+						<li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+						<li class="nav-item"><a class="nav-link" href="#features">Work</a></li>
+						<li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+						<li class="nav-item d-none d-lg-block"><a class="btn btn-outline-primary ms-3" href="#contact">Hire me</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<!-- Hero -->
+		<header class="hero py-5 text-white">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-lg-6 mb-4 mb-lg-0">
+						<h1 class="display-5 fw-bold">Hi, I'm Emmanuel Wallace Landford — a Front-end Developer</h1>
+						<p class="lead">I build responsive, accessible websites and web apps. Below are a few highlights of what I do.</p>
+						<p>
+							<a href="#features" class="btn btn-primary btn-lg me-2">See my work</a>
+							<a href="#contact" class="btn btn-outline-light btn-lg">Contact</a>
+						</p>
+					</div>
+					<div class="col-lg-6 text-center">
+						<img src="Images/EMMANUEL WALLACE LANDFORD 1 (2).jpg" alt="profile" class="img-fluid rounded shadow-sm" style="max-width:360px;">
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<!-- Features / Cards -->
+		<section id="features" class="py-5">
+			<div class="container">
+				<h2 class="h3 text-center mb-4">Selected services</h2>
+				<div class="row g-4">
+					<div class="col-md-4">
+						<div class="card h-100 feature-card">
+							<img src="Images/prog.jpg" class="card-img-top" alt="web dev">
+							<div class="card-body text-center">
+								<h5 class="card-title">Web Development</h5>
+								<p class="card-text">Responsive sites with semantic HTML, modern CSS and Bootstrap.</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-4">
+						<div class="card h-100 feature-card">
+							<img src="Images/joanna-kosinska-7ACuHoezUYk-unsplash.jpg" class="card-img-top" alt="design">
+							<div class="card-body text-center">
+								<h5 class="card-title">UI/UX Design</h5>
+								<p class="card-text">Simple, usable interfaces with attention to accessibility and performance.</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-4">
+						<div class="card h-100 feature-card">
+							<img src="Images/keith-misner-h0Vxgz5tyXA-unsplash.jpg" class="card-img-top" alt="seo">
+							<div class="card-body text-center">
+								<h5 class="card-title">Optimization</h5>
+								<p class="card-text">Improving load speed, SEO basics, and responsive media handling.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Contact Form -->
+		<section id="contact" class="py-5 bg-light">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-lg-8">
+						<div class="card shadow-sm">
+							<div class="card-body">
+								<h3 class="card-title mb-3">Get in touch</h3>
+								<p class="text-muted">Interested in working together? Send a message and I'll reply soon.</p>
+								<form action="#" method="post" novalidate>
+									<div class="row g-3">
+										<div class="col-md-6">
+											<label for="name" class="form-label">Name</label>
+											<input type="text" class="form-control" id="name" name="name" placeholder="Your name" required>
+										</div>
+										<div class="col-md-6">
+											<label for="email" class="form-label">Email</label>
+											<input type="email" class="form-control" id="email" name="email" placeholder="you@example.com" required>
+										</div>
+										<div class="col-12">
+											<label for="message" class="form-label">Message</label>
+											<textarea class="form-control" id="message" name="message" rows="5" placeholder="How can I help?" required></textarea>
+										</div>
+										<div class="col-12 d-grid">
+											<button type="submit" class="btn btn-primary btn-lg">Send message</button>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer class="py-4 text-center small text-muted">
+			<div class="container">&copy; <span id="year"></span> Emmanuel Landford • All rights reserved</div>
+		</footer>
+
+		<!-- Local Bootstrap JS -->
+		<script src="JS/bootstrap.js"></script>
+		<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+	</body>
+</html>

@@ -1,0 +1,40 @@
+/* Reset */
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+
+/* --- Landing page custom styles --- */
+.hero{
+	background: linear-gradient(90deg, rgba(2,6,23,0.65), rgba(12,27,59,0.65)), url('Images/computerbg.jpg');
+	background-position: center;
+	background-size: cover;
+}
+
+.hero .display-5{ color: #fff; }
+.hero .lead{ color: #e6eef9; }
+
+.feature-card .icon{
+	font-size: 2rem;
+}
+
+.card-footer a{ text-decoration: none; }
+
+/* make form controls a bit taller for touch devices */
+form .form-control{ min-height: 44px; }
+
+/* responsive tweaks */
+@media (max-width: 991.98px){
+	.main{ width: 100%; }
+}
+
+@media (max-width: 767.98px){
+	.hero{ padding-top: 3rem; padding-bottom: 3rem; }
+	.narbar{ width: 90%; }
+}
+
+/* small utility */
+.text-muted small{ color: #6c757d; }
